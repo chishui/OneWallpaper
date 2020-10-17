@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1E6D5A2E252A794F004E7EF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A2D252A794F004E7EF7 /* main.swift */; };
+		1E6D5A3A252A7B7D004E7EF7 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 1E6D5A39252A7B7D004E7EF7 /* ArgumentParser */; };
+		1E6D5A3E252A7DDC004E7EF7 /* MonitorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A3D252A7DDC004E7EF7 /* MonitorInfo.swift */; };
+		1E6D5A42252AC822004E7EF7 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 1E6D5A41252AC822004E7EF7 /* SQLite */; };
+		1E6D5A45252ADA6E004E7EF7 /* NSImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A44252ADA6E004E7EF7 /* NSImageExtensions.swift */; };
+		1E6D5A48252C1119004E7EF7 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A47252C1119004E7EF7 /* Wallpaper.swift */; };
+		1E6D5A4B252C1E00004E7EF7 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A4A252C1E00004E7EF7 /* Screen.swift */; };
+		1E6D5A4E252C2422004E7EF7 /* ImageCutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A4D252C2422004E7EF7 /* ImageCutter.swift */; };
+		1E6D5A5225301D4D004E7EF7 /* PathHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6D5A5125301D4D004E7EF7 /* PathHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +33,12 @@
 /* Begin PBXFileReference section */
 		1E6D5A2A252A794F004E7EF7 /* WallpaperSplit */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WallpaperSplit; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E6D5A2D252A794F004E7EF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1E6D5A3D252A7DDC004E7EF7 /* MonitorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorInfo.swift; sourceTree = "<group>"; };
+		1E6D5A44252ADA6E004E7EF7 /* NSImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtensions.swift; sourceTree = "<group>"; };
+		1E6D5A47252C1119004E7EF7 /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
+		1E6D5A4A252C1E00004E7EF7 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		1E6D5A4D252C2422004E7EF7 /* ImageCutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCutter.swift; sourceTree = "<group>"; };
+		1E6D5A5125301D4D004E7EF7 /* PathHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6D5A42252AC822004E7EF7 /* SQLite in Frameworks */,
+				1E6D5A3A252A7B7D004E7EF7 /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +74,12 @@
 			isa = PBXGroup;
 			children = (
 				1E6D5A2D252A794F004E7EF7 /* main.swift */,
+				1E6D5A3D252A7DDC004E7EF7 /* MonitorInfo.swift */,
+				1E6D5A44252ADA6E004E7EF7 /* NSImageExtensions.swift */,
+				1E6D5A47252C1119004E7EF7 /* Wallpaper.swift */,
+				1E6D5A4A252C1E00004E7EF7 /* Screen.swift */,
+				1E6D5A4D252C2422004E7EF7 /* ImageCutter.swift */,
+				1E6D5A5125301D4D004E7EF7 /* PathHelper.swift */,
 			);
 			path = WallpaperSplit;
 			sourceTree = "<group>";
@@ -78,6 +100,10 @@
 			dependencies = (
 			);
 			name = WallpaperSplit;
+			packageProductDependencies = (
+				1E6D5A39252A7B7D004E7EF7 /* ArgumentParser */,
+				1E6D5A41252AC822004E7EF7 /* SQLite */,
+			);
 			productName = WallpaperSplit;
 			productReference = 1E6D5A2A252A794F004E7EF7 /* WallpaperSplit */;
 			productType = "com.apple.product-type.tool";
@@ -105,6 +131,10 @@
 				Base,
 			);
 			mainGroup = 1E6D5A21252A794F004E7EF7;
+			packageReferences = (
+				1E6D5A38252A7B7D004E7EF7 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				1E6D5A40252AC822004E7EF7 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = 1E6D5A2B252A794F004E7EF7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -119,6 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6D5A5225301D4D004E7EF7 /* PathHelper.swift in Sources */,
+				1E6D5A4B252C1E00004E7EF7 /* Screen.swift in Sources */,
+				1E6D5A3E252A7DDC004E7EF7 /* MonitorInfo.swift in Sources */,
+				1E6D5A4E252C2422004E7EF7 /* ImageCutter.swift in Sources */,
+				1E6D5A45252ADA6E004E7EF7 /* NSImageExtensions.swift in Sources */,
+				1E6D5A48252C1119004E7EF7 /* Wallpaper.swift in Sources */,
 				1E6D5A2E252A794F004E7EF7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +321,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E6D5A38252A7B7D004E7EF7 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.1;
+			};
+		};
+		1E6D5A40252AC822004E7EF7 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E6D5A39252A7B7D004E7EF7 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E6D5A38252A7B7D004E7EF7 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		1E6D5A41252AC822004E7EF7 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E6D5A40252AC822004E7EF7 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E6D5A22252A794F004E7EF7 /* Project object */;
 }
