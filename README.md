@@ -1,6 +1,8 @@
 OneWallpaper
 ==============================
-OneWallpaper can help you set up a continous wallpaper across multiple monitors with one image with smooth transition. It works on MacOS.
+![alt text](logo.png "title" )
+
+OneWallpaper is a MacOS command line tool which can help you set up a continous wallpaper across multiple monitors with one image with smooth transition.
 
 # Install
 ## Build from source code
