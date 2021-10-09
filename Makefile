@@ -8,9 +8,6 @@ build:
 install: build
 	install -d "$(bindir)" "$(libdir)"
 	install ".build/release/one-wallpaper" "$(bindir)"
-	install_name_tool -change \
-		".build/x86_64-apple-macosx10.10/release/libSwiftSyntax.dylib" \
-		"$(bindir)/one-wallpaper"
 
 uninstall:
 	rm -rf "$(bindir)/one-wallpaper"
