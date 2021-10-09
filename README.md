@@ -1,9 +1,30 @@
 OneWallpaper
 ==============================
-OneWallpaper can help you set up a continous wallpaper across your multiple monitors with single wallpaper with smooth transition.
+OneWallpaper can help you set up a continous wallpaper across multiple monitors with one image with smooth transition. It works on MacOS.
 
 # Install
+## Build from source code
+```bash
+$ git clone https://github.com/chishui/OneWallpaper.git
+$ cd OneWallpaper
+$ make build
+$ make install
+```
+## Install from brew
+This package hasn't been published to brew. But you can still utilize brew to help you install the tool.
 ```bash
 $ brew tap chishui/OneWallpaper
-$ brew install one-wallpaper
+$ brew install --build-from-source onewallpaper
 ```
+
+# How to Run?
+## Set wallpaper with a specific image
+```bash
+$ one-wallpaper "/Users/me/spider-man.png" # with image file path
+```
+## Set wallpaper with random image from a folder
+```bash
+$ one-wallpaper "/Users/me/wallpaper" # with image folder
+```
+## Set automatic wallpaper change
+You can set up a cronjob with command above to enable auto wallpaper change.
