@@ -1,6 +1,6 @@
 OneWallpaper
 ==============================
-![alt text](logo.png "title" )
+![alt text](https://s3.amazonaws.com/xiuliyun.com/static/github/onewallpaper/logo.svg "title" )
 
 OneWallpaper is a MacOS command line tool which can help you set up a continous wallpaper across multiple monitors with one image with smooth transition.
 
